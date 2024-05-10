@@ -31,6 +31,7 @@ public class Startup {
         produto1.setNome("Produto 1");
         produto1.setDescricao("Descrição do Produto 1");
         produto1.setValorProduto(10.0); // Alterado para double
+        produto1.setQuantidadeProduto(5);
         produto1.setDataChegadaProduto(new Date(2024, 4, 17));
         produtoService.save(produto1);
         

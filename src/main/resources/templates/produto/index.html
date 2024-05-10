@@ -11,6 +11,7 @@
             <thead>
                 <th>Nome</th>
                 <th>Descrição</th>
+                <th>Quantidade</th>
                 <th>Valor</th>
                 <th>Data de Chegada</th>
             </thead>
@@ -18,6 +19,7 @@
                 <tr th:each="umProduto : ${listaProdutos}">
                     <td th:text="${umProduto.nome}"></td>
                     <td th:text="${umProduto.descricao}"></td>
+                    <td th:text="${umProduto.quantidadeProduto}"></td>
                     <td th:text="${umProduto.valorProduto}"></td>
                     <td th:text="${umProduto.dataChegadaProduto}"></td>
                     <td><a th:href="@{'/produtos/alterar/' + ${umProduto.id}}" class="btn btn-warning">Alterar</a>

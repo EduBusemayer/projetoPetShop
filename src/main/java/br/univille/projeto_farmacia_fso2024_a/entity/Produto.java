@@ -23,6 +23,8 @@ public class Produto {
     private String descricao;
     @Column(length = 1000)
     private double valorProduto;
+    @Column(length = 1000)
+    private int quantidadeProduto;
     @Temporal(TemporalType.DATE)
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date dataChegadaProduto;
@@ -56,4 +58,11 @@ public class Produto {
     public void setDataChegadaProduto(Date dataChegadaProduto) {
         this.dataChegadaProduto = dataChegadaProduto;
     }
+    public int getQuantidadeProduto() {
+        return quantidadeProduto;
+    }
+    public void setQuantidadeProduto(int quantidadeProduto) {
+        this.quantidadeProduto = quantidadeProduto;
+    }
+
 }
