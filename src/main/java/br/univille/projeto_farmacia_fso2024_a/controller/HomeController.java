@@ -10,10 +10,6 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/")
 public class HomeController {
     @GetMapping
-    //@ResponseBody
-    //public String index() {
-    //    return "MÃE, eu não acredito";
-    //}
     public ModelAndView index() {
         return new ModelAndView("home/index");    
     }
