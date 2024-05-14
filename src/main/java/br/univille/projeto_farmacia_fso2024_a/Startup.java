@@ -6,9 +6,11 @@ import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 import br.univille.projeto_farmacia_fso2024_a.entity.Cliente;
+import br.univille.projeto_farmacia_fso2024_a.entity.Funcionario;
 import br.univille.projeto_farmacia_fso2024_a.entity.Produto;
 import br.univille.projeto_farmacia_fso2024_a.service.ClienteService;
 import br.univille.projeto_farmacia_fso2024_a.service.ProdutoService;
+import br.univille.projeto_farmacia_fso2024_a.service.FuncionarioService;
 
 @Component
 public class Startup {
@@ -17,7 +19,10 @@ public class Startup {
     private ClienteService service;
 
     @Autowired
-    private ProdutoService produtoService; 
+    private ProdutoService produtoService;
+
+    @Autowired
+    private FuncionarioService funcionarioService; 
 
     @EventListener
     public void onApplicationEvent(ContextRefreshedEvent event) {
@@ -32,9 +37,16 @@ public class Startup {
         produto1.setDescricao("Descrição do Produto 1");
         produto1.setValorProduto(10.0); // Alterado para double
         produto1.setQuantidadeProduto(5);
-        produto1.setDataChegadaProduto(new Date(2024, 4, 17));
+        produto1.setDataChegadaProduto(new Date(2024,4,17));
         produtoService.save(produto1);
-        
-    }
 
+        var funcionario1 = new Funcionario();
+        funcionario1.setNome("Eduardo");
+        funcionario1.setCpf("081.458.039.-42");
+        funcionario1.setEndereco("Rua Jaú, 105");
+        funcionario1.setDataNascimento(new Date(2003,8,7));
+        funcionario1.setCargo("Boss");
+        funcionario1.setEmail("edubusemayer@gmail.com");
+        funcionarioService.save(funcionario1);
+    }
 }
