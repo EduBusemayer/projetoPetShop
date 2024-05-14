@@ -1,0 +1,19 @@
+.home {
+    margin-top: 1em;
+    color: #00d6b7;
+    font-size: 0.95em;
+    text-align: center;
+    position: relative;
+}
+
+.signout {
+    margin-top: 1em;
+    color: #00d6b7;
+    font-size: 0.95em;
+    text-align: center;
+    position: relative;
+}
+
+.col-auto {
+    background: linear-gradient(135deg, rgba(36, 46, 77, 0.9), rgba(137, 126, 121, 0.9));
+}

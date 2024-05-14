@@ -3,47 +3,47 @@ package br.univille.projeto_farmacia_fso2024_a.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import br.univille.projeto_farmacia_fso2024_a.entity.Produto;
-import br.univille.projeto_farmacia_fso2024_a.service.ProdutoService;
+import br.univille.projeto_farmacia_fso2024_a.entity.Funcionario;
+import br.univille.projeto_farmacia_fso2024_a.service.FuncionarioService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/produtos")
-public class ProdutoController {
+@RequestMapping("/funcionarios")
+public class FuncionarioController {
     
     @Autowired
-    private ProdutoService service;
+    private FuncionarioService service;
 
     @GetMapping
     public ModelAndView index() {
-        var listaProdutos = service.getAll();
-        return new ModelAndView("produto/index","listaProdutos",listaProdutos);
+        var listaFuncionarios = service.getAll();
+        return new ModelAndView("funcionario/index","listaFuncionarios",listaFuncionarios);
     }
     
     @GetMapping("/novo")
     public ModelAndView novo() {
-        var produto = new Produto();
-        return new ModelAndView("produto/form","produto",produto);
+        var funcionario = new Funcionario();
+        return new ModelAndView("funcionario/form","funcionario",funcionario);
     }
 
     @PostMapping
-    public ModelAndView save(Produto produto) {
-        service.save(produto);
-        return new ModelAndView("redirect:/produtos");
+    public ModelAndView save(Funcionario funcionario) {
+        service.save(funcionario);
+        return new ModelAndView("redirect:/");
     }
 
     @GetMapping("/alterar/{id}")
     public ModelAndView alterar(@PathVariable("id") long id) {
-        var produto = service.getById(id);
-        return new ModelAndView("produto/form", "produto", produto);
+        var funcionario = service.getById(id);
+        return new ModelAndView("funcionario/form", "funcionario", funcionario);
     }
 
     @GetMapping("/delete/{id}")
     public ModelAndView delete(@PathVariable("id") long id){
         service.delete(id);
-        return new ModelAndView("redirect:/produtos");
+        return new ModelAndView("redirect:/funcionarios");
     }
 }
