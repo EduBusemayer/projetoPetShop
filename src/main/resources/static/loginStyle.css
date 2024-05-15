@@ -114,6 +114,8 @@ body:before {
     justify-content: center;
     background: #f5f6f8;
     cursor: pointer;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .lf--input {
@@ -122,6 +124,8 @@ body:before {
     border: 0;
     color: #8f8f8f;
     font-size: 1rem;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .lf--submit {
@@ -135,6 +139,7 @@ body:before {
     font-size: 0.75em;
     font-weight: 600;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
 }
 
 .lf--forgot {
