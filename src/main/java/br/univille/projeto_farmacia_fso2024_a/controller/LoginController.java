@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/home")
-public class HomerController {
+@RequestMapping("/")
+public class LoginController {
     @GetMapping
     public ModelAndView index() {
-        return new ModelAndView("home/home");    
+        return new ModelAndView("home/index");    
     }
 }
