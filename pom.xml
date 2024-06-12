@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.univille</groupId>
-	<artifactId>projeto_farmacia_fso2024_a</artifactId>
+	<artifactId>projeto_petshop_fso2024_a</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>projeto_farmacia_fso2024_a</name>
+	<name>projeto_petshop_fso2024_a</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>

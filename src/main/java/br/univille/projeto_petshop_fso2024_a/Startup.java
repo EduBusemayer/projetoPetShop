@@ -1,16 +1,17 @@
-package br.univille.projeto_farmacia_fso2024_a;
+package br.univille.projeto_petshop_fso2024_a;
 
 import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
-import br.univille.projeto_farmacia_fso2024_a.entity.Cliente;
-import br.univille.projeto_farmacia_fso2024_a.entity.Funcionario;
-import br.univille.projeto_farmacia_fso2024_a.entity.Produto;
-import br.univille.projeto_farmacia_fso2024_a.service.ClienteService;
-import br.univille.projeto_farmacia_fso2024_a.service.ProdutoService;
-import br.univille.projeto_farmacia_fso2024_a.service.FuncionarioService;
+
+import br.univille.projeto_petshop_fso2024_a.entity.Cliente;
+import br.univille.projeto_petshop_fso2024_a.entity.Funcionario;
+import br.univille.projeto_petshop_fso2024_a.entity.Produto;
+import br.univille.projeto_petshop_fso2024_a.service.ClienteService;
+import br.univille.projeto_petshop_fso2024_a.service.FuncionarioService;
+import br.univille.projeto_petshop_fso2024_a.service.ProdutoService;
 
 @Component
 public class Startup {

@@ -1,4 +1,4 @@
-package br.univille.projeto_farmacia_fso2024_a.controller;
+package br.univille.projeto_petshop_fso2024_a.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

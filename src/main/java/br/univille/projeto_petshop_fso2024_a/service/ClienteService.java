@@ -1,7 +1,8 @@
-package br.univille.projeto_farmacia_fso2024_a.service;
+package br.univille.projeto_petshop_fso2024_a.service;
 
 import java.util.List;
-import br.univille.projeto_farmacia_fso2024_a.entity.Cliente;
+
+import br.univille.projeto_petshop_fso2024_a.entity.Cliente;
 
 public interface ClienteService {
     void save(Cliente cliente);

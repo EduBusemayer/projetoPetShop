@@ -1,11 +1,12 @@
-package br.univille.projeto_farmacia_fso2024_a.service.impl;
+package br.univille.projeto_petshop_fso2024_a.service.impl;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import br.univille.projeto_farmacia_fso2024_a.entity.Produto;
-import br.univille.projeto_farmacia_fso2024_a.repository.ProdutoRepository;
-import br.univille.projeto_farmacia_fso2024_a.service.ProdutoService;
+
+import br.univille.projeto_petshop_fso2024_a.entity.Produto;
+import br.univille.projeto_petshop_fso2024_a.repository.ProdutoRepository;
+import br.univille.projeto_petshop_fso2024_a.service.ProdutoService;
 
 @Service
 public class ProdutoServiceImpl implements ProdutoService {

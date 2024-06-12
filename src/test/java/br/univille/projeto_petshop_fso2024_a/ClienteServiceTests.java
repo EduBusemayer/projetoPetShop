@@ -1,4 +1,4 @@
-package br.univille.projeto_farmacia_fso2024_a;
+package br.univille.projeto_petshop_fso2024_a;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
@@ -7,8 +7,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
-import br.univille.projeto_farmacia_fso2024_a.entity.Cliente;
-import br.univille.projeto_farmacia_fso2024_a.service.ClienteService;
+
+import br.univille.projeto_petshop_fso2024_a.entity.Cliente;
+import br.univille.projeto_petshop_fso2024_a.service.ClienteService;
 
 @SpringBootTest
 @ContextConfiguration

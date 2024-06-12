@@ -1,14 +1,15 @@
-package br.univille.projeto_farmacia_fso2024_a.controller;
+package br.univille.projeto_petshop_fso2024_a.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import br.univille.projeto_farmacia_fso2024_a.entity.Funcionario;
-import br.univille.projeto_farmacia_fso2024_a.service.FuncionarioService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import br.univille.projeto_petshop_fso2024_a.entity.Funcionario;
+import br.univille.projeto_petshop_fso2024_a.service.FuncionarioService;
 
 @Controller
 @RequestMapping("/funcionarios")

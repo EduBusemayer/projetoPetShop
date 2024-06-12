@@ -1,14 +1,15 @@
-package br.univille.projeto_farmacia_fso2024_a.controller;
+package br.univille.projeto_petshop_fso2024_a.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import br.univille.projeto_farmacia_fso2024_a.entity.Produto;
-import br.univille.projeto_farmacia_fso2024_a.service.ProdutoService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import br.univille.projeto_petshop_fso2024_a.entity.Produto;
+import br.univille.projeto_petshop_fso2024_a.service.ProdutoService;
 
 @Controller
 @RequestMapping("/produtos")
