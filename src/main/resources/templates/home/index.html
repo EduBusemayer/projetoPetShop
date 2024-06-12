@@ -15,10 +15,10 @@
     <div class="row">
       <div class="col" id="bloco-login">
         <div class="d-flex justify-content-center mb-4">
-          <img th:src="@{/img/farmacia.png}" alt="farmacia" id="img-farmacia">
+          <img th:src="@{/img/petshop.png}" alt="pet-shop-logo" id="img-petshop">
         </div>
         <form th:action="@{/home}">
-          <p class="fs-3 text-white text-center">Acesso ao sistema farmacêutico</p>
+          <p class="fs-3 text-white text-center">Acesso ao sistema do PetShop</p>
           <div class="input-group mb-2">
             <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-user"></i></span>
             <input type="text" class="form-control py-2" placeholder="Digite seu usuário" aria-label="Usuario"
@@ -29,7 +29,7 @@
             <input type="password" class="form-control py-2" placeholder="Digite sua senha" aria-label="Senha"
               aria-describedby="basic-addon1" required>
           </div>
-          <button type="submit" class="btn btn-primary btn-lg mb-5 w-100">Entrar</button>
+          <button type="submit" class="btn btn-primary btn-lg mb-4 w-100">Entrar</button>
             <p class="text-center"><a th:href="@{'/senha'}">Esqueci minha Senha</a></p>
         </form>
       </div>

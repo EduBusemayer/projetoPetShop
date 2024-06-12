@@ -16,8 +16,11 @@
     <div class="container d-flex justify-content-center align-items-center vh-100">
       <div class="row">
         <div class="col" id="bloco-senha">
+          <button type="button" class="btn btn-primary" onclick="location.href='/';" value='Voltar'>
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
           <div class="d-flex justify-content-center mb-4">
-            <img th:src="@{/img/farmacia.png}" alt="farmacia" id="img-farmacia">
+            <img th:src="@{/img/petshop.png}" alt="pet-shop-logo" id="img-petshop">
           </div>
           <form id="recSenha">
             <p class="fs-4 text-white text-center">Solicitação para troca de senha</p>
@@ -27,10 +30,6 @@
                 aria-describedby="basic-addon1" required>
             </div>
             <button type="submit" class="btn btn-primary btn-lg mb-3 w-100">Enviar</button>
-            <button type="button" class="btn btn-primary btn-lg" onclick="location.href='/';" value='Voltar'>
-              <i class="fa-solid fa-arrow-left"></i>
-              <span class="mx-1">Voltar</span>
-            </button>
           </form>
           <div id="popupOverlay" class="popup-overlay"></div>
 
