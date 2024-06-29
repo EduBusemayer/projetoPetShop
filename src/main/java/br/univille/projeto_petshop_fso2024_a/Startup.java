@@ -6,9 +6,11 @@ import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
+import br.univille.projeto_petshop_fso2024_a.entity.Animal;
 import br.univille.projeto_petshop_fso2024_a.entity.Cliente;
 import br.univille.projeto_petshop_fso2024_a.entity.Funcionario;
 import br.univille.projeto_petshop_fso2024_a.entity.Produto;
+import br.univille.projeto_petshop_fso2024_a.service.AnimalService;
 import br.univille.projeto_petshop_fso2024_a.service.ClienteService;
 import br.univille.projeto_petshop_fso2024_a.service.FuncionarioService;
 import br.univille.projeto_petshop_fso2024_a.service.ProdutoService;
@@ -24,6 +26,9 @@ public class Startup {
 
     @Autowired
     private FuncionarioService funcionarioService; 
+
+    @Autowired
+    private AnimalService animalService;
 
     @EventListener
     public void onApplicationEvent(ContextRefreshedEvent event) {
@@ -49,5 +54,14 @@ public class Startup {
         funcionario1.setCargo("Boss");
         funcionario1.setEmail("edubusemayer@gmail.com");
         funcionarioService.save(funcionario1);
+
+        var animalService1 = new Animal();
+        animalService1.setNome("Suri");
+        animalService1.setTipo("Cachorro");
+        animalService1.setRaça("lhasa apso");
+        animalService1.setCor("Preto com branco");
+        animalService1.setDataNascimento(new Date(2010, 7, 19));
+        animalService1.setDono("Felipe Serrano Santos");
+        animalService.save(animalService1);
     }
 }
