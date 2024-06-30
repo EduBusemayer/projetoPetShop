@@ -8,6 +8,14 @@
     max-width: 325px;
 }
 
+.side2{
+    background-color: #1B1F27;
+}
+
+.colteste{
+    background-color: red;
+}
+
 #img-login{
     width: 80px;
     height: 85px;
