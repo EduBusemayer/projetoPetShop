@@ -3,11 +3,9 @@
     <head th:include="layout :: htmlhead">
       <title id="pageTittle">Produto</title>
     </head>
+    <link rel="stylesheet" th:href="@{/baseStyle.css}">
     <body>
-        <nav th:replace="layout :: menu">(menu)</nav>
         <h1>Produtos</h1>
-        
-        <a href="/produtos/novo" class="btn btn-primary">Novo</a>
 
         <table class="table" id="tabprodutos">
             <thead>
@@ -24,12 +22,14 @@
                     <td th:text="${umProduto.quantidadeProduto}"></td>
                     <td th:text="${umProduto.valorProduto}"></td>
                     <td th:text="${umProduto.dataChegadaProduto}"></td>
-                    <td><a th:href="@{'/produtos/alterar/' + ${umProduto.id}}" class="btn btn-warning">Alterar</a>
+                    <td class="botoes"><a th:href="@{'/produtos/alterar/' + ${umProduto.id}}" class="btn btn-warning">Alterar</a>
                         <button class="btn btn-danger js-delete" th:data-id="${umProduto.id}">Excluir</button>
                     </td>
                 </tr>
             </tbody>
         </table>
+
+        <a id="novo" href="/produtos/novo" class="btn btn-primary">Novo</a>
 
         <div class="modal" tabindex="-1" id="modalproduto">
             <div class="modal-dialog">
@@ -47,6 +47,10 @@
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="image-container">
+            <img th:src="@{/img/petshop.png}" alt="pet-shop-logo" id="img-petshop">
           </div>
 
         <div th:include="layout :: footer">(footer)</div>

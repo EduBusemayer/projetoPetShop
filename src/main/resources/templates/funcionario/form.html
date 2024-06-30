@@ -3,41 +3,41 @@
     <head th:include="layout :: htmlhead">
         <title id="pageTittle">Funcionário</title>
     </head>
+    <link rel="stylesheet" th:href="@{/baseStyle.css}">
     <body>     
         <main class="container">
-            <nav th:replace="layout :: menu">(menu)</nav>
             <h1>Funcionário</h1>
-            <form th:action="@{/funcionarios}" method="post" th:object="${funcionario}">
+            <form id="forms" th:action="@{/funcionarios}" method="post" th:object="${funcionario}">
 
                 <input type="hidden" th:field="*{id}">
 
                 <div class="form-group">
-                    <label for="txtnome">Nome</label>
-                    <input type="text" th:field="*{nome}" id="txtnome" class="form-control">
+                    <label id="texto" for="txtnome">Nome</label>
+                    <input type="text" th:field="*{nome}" id="txtnome" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="txtcpf">CPF</label>
-                    <input type="text" th:field="*{cpf}" id="txtcpf" class="form-control">
+                    <label id="texto" for="txtcpf">CPF</label>
+                    <input type="text" th:field="*{cpf}" id="txtcpf" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="txtendereco">Endereço</label>
-                    <input type="text" th:field="*{endereco}" id="txtendereco" class="form-control">
+                    <label id="texto" for="txtendereco">Endereço</label>
+                    <input type="text" th:field="*{endereco}" id="txtendereco" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="txtdatanascimento">Data de Nascimento</label>
-                    <input type="date" th:field="*{dataNascimento}" id="txtdatanascimento" class="form-control">
+                    <label id="texto" for="txtdatanascimento">Data de Nascimento</label>
+                    <input type="date" th:field="*{dataNascimento}" id="txtdatanascimento" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="txtcargo">Cargo</label>
-                    <input type="text" th:field="*{cargo}" id="txtcargo" class="form-control">
+                    <label id="texto" for="txtcargo">Cargo</label>
+                    <input type="text" th:field="*{cargo}" id="txtcargo" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="txtemail">E-mail</label>
-                    <input type="text" th:field="*{email}" id="txtemail" class="form-control">
+                    <label id="texto" for="txtemail">E-mail</label>
+                    <input type="text" th:field="*{email}" id="txtemail" class="form-control" required>
                 </div>
 
                 <div class="form-group">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
+                    <button id="enviar" class="btn btn-primary" type="submit">Enviar</button>
                 </div>
 
             </form>

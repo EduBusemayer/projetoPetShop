@@ -3,8 +3,8 @@
     <head th:include="layout :: htmlhead">
       <title id="pageTittle">Funcionário</title>
     </head>
+    <link rel="stylesheet" th:href="@{/baseStyle.css}">
     <body>
-        <nav th:replace="layout :: menu">(menu)</nav>
         <h1>Funcionários</h1>
 
         <table class="table" id="tabfuncionarios">
@@ -24,12 +24,14 @@
                     <td th:text="${umFuncionario.dataNascimento}"></td>
                     <td th:text="${umFuncionario.cargo}"></td>
                     <td th:text="${umFuncionario.email}"></td>
-                    <td><a th:href="@{'/funcionarios/alterar/' + ${umFuncionario.id}}" class="btn btn-warning">Alterar</a>
+                    <td class="botoes"><a th:href="@{'/funcionarios/alterar/' + ${umFuncionario.id}}" class="btn btn-warning">Alterar</a>
                         <button class="btn btn-danger js-delete" th:data-id="${umFuncionario.id}">Excluir</button>
                     </td>
                 </tr>
             </tbody>
         </table>
+
+        <a href="/funcionarios/novo" class="btn btn-primary" id="novo">Novo</a>
 
         <div class="modal" tabindex="-1" id="modalfuncionario">
             <div class="modal-dialog">
@@ -48,6 +50,10 @@
               </div>
             </div>
           </div>
+
+        <div class="image-container">
+          <img th:src="@{/img/petshop.png}" alt="pet-shop-logo" id="img-petshop">
+        </div>
 
         <div th:include="layout :: footer">(footer)</div>
         <script th:src="@{/scriptFuncionarios.js}"></script>
