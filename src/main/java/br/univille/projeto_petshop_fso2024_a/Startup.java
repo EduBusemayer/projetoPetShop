@@ -1,5 +1,6 @@
 package br.univille.projeto_petshop_fso2024_a;
 
+import java.time.LocalDate;
 import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.ContextRefreshedEvent;
@@ -12,6 +13,7 @@ import br.univille.projeto_petshop_fso2024_a.entity.Funcionario;
 import br.univille.projeto_petshop_fso2024_a.entity.Produto;
 import br.univille.projeto_petshop_fso2024_a.service.AnimalService;
 import br.univille.projeto_petshop_fso2024_a.service.ClienteService;
+
 import br.univille.projeto_petshop_fso2024_a.service.FuncionarioService;
 import br.univille.projeto_petshop_fso2024_a.service.ProdutoService;
 
