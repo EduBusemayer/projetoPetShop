@@ -1,0 +1,41 @@
+body {
+    background-color: #1B1F27;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+#novo {
+    margin-left: 1408px;
+}
+
+#enviar {
+    margin-top: 10px;
+    margin-left: 300px;
+}
+
+.table, #texto {
+    color: white;
+}
+
+.botoes {
+    text-align: right;
+}
+
+#forms {
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.image-container {
+    position: absolute;
+    top: 60px;
+    right: 320px;
+    opacity: 0.1;
+}

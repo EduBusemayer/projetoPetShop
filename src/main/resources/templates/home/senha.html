@@ -22,14 +22,13 @@
           <div class="d-flex justify-content-center mb-4">
             <img th:src="@{/img/petshop.png}" alt="pet-shop-logo" id="img-petshop">
           </div>
-          <form id="recSenha">
+          <form id="recSenha" action="src\main\resources\static\emailSend.py" method="get">
             <p class="fs-4 text-white text-center">Solicitação para troca de senha</p>
             <div class="input-group mb-3">
               <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-envelope"></i></span>
-              <input type="email" class="form-control py-2" placeholder="Digite seu e-mail" aria-label="E-mail"
-                aria-describedby="basic-addon1" required>
+              <input type="email" name="e-mail" class="form-control py-2" placeholder="Digite seu e-mail" aria-label="E-mail" aria-describedby="basic-addon1" required>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg mb-3 w-100">Enviar</button>
+            <input type="submit" class="btn btn-primary btn-lg mb-3 w-100">Enviar</button>
           </form>
           <div id="popupOverlay" class="popup-overlay"></div>
 

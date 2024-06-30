@@ -3,41 +3,41 @@
     <head th:include="layout :: htmlhead">
         <title id="pageTittle">Animais</title>
     </head>
+    <link rel="stylesheet" th:href="@{/baseStyle.css}">
     <body>     
         <main class="container">
-            <nav th:replace="layout :: menu">(menu)</nav>
             <h1>Animal</h1>
-            <form th:action="@{/animais}" method="post" th:object="${animal}">
+            <form id="forms" th:action="@{/animais}" method="post" th:object="${animal}">
 
                 <input type="hidden" th:field="*{id}">
 
                 <div class="form-group">
-                    <label for="txtnome">Nome</label>
-                    <input type="text" th:field="*{nome}" id="txtnome" class="form-control">
+                    <label id="texto" for="txtnome">Nome</label>
+                    <input type="text" th:field="*{nome}" id="txtnome" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="txttipo">Tipo</label>
-                    <input type="text" th:field="*{tipo}" id="txttipo" class="form-control">
+                    <label id="texto" for="txttipo">Tipo</label>
+                    <input type="text" th:field="*{tipo}" id="txttipo" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="txtraça">Raça</label>
-                    <input type="text" th:field="*{raça}" id="txtraça" class="form-control">
+                    <label id="texto" for="txtraça">Raça</label>
+                    <input type="text" th:field="*{raça}" id="txtraça" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="txtcor">Cor</label>
-                    <input type="text" th:field="*{cor}" id="txtcor" class="form-control">
+                    <label id="texto" for="txtcor">Cor</label>
+                    <input type="text" th:field="*{cor}" id="txtcor" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="txtdataNascimento">Data de nascimento</label>
-                    <input type="date" th:field="*{dataNascimento}" id="txtdataNascimento" class="form-control">
+                    <label id="texto" for="txtdataNascimento">Data de nascimento</label>
+                    <input type="date" th:field="*{dataNascimento}" id="txtdataNascimento" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label for="txtdono">Dono / Cuidador</label>
-                    <input type="text" th:field="*{dono}" id="txtdono" class="form-control">
+                    <label id="texto" for="txtdono">Dono / Cuidador</label>
+                    <input type="text" th:field="*{dono}" id="txtdono" class="form-control" required>
                 </div>
 
                 <div class="form-group">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
+                    <button id="enviar" class="btn btn-primary" type="submit">Enviar</button>
                 </div>
 
             </form>

@@ -33,7 +33,7 @@ public class FuncionarioController {
     @PostMapping
     public ModelAndView save(Funcionario funcionario) {
         service.save(funcionario);
-        return new ModelAndView("redirect:/");
+        return new ModelAndView("redirect:/funcionarios");
     }
 
     @GetMapping("/alterar/{id}")
