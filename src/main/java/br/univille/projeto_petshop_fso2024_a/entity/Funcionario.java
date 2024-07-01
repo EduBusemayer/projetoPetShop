@@ -30,6 +30,8 @@ public class Funcionario {
     @Column(length = 1000)
     private String cpf;
     @Column(length = 1000)
+    private String senha;
+    @Column(length = 1000)
 
     public Date getDataNascimento() {
         return dataNascimento;
@@ -72,5 +74,11 @@ public class Funcionario {
     }
     public void setCpf(String cpf) {
         this.cpf = cpf;
+    }
+    public String getSenha() {
+        return senha;
+    }
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
 }
