@@ -17,29 +17,29 @@
         <div class="d-flex justify-content-center mb-4">
           <img th:src="@{/img/petshop.png}" alt="pet-shop-logo" id="img-petshop">
         </div>
-        <form th:action="@{/home}">
+        <form th:action="@{/funcionarios/login}" method="post">
           <p class="fs-3 text-white text-center">Acesso ao sistema do PetShop</p>
           <div class="input-group mb-2">
             <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-user"></i></span>
-            <input type="text" class="form-control py-2" placeholder="Digite seu usuário" aria-label="Usuario"
-              aria-describedby="basic-addon1" required>
+            <input type="text" class="form-control py-2" name="email" placeholder="Digite seu usuário"
+              aria-label="Usuario" aria-describedby="basic-addon1" required>
           </div>
           <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-fingerprint"></i></i></span>
-            <input type="password" class="form-control py-2" placeholder="Digite sua senha" aria-label="Senha"
-              aria-describedby="basic-addon1" required>
+            <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-fingerprint"></i></span>
+            <input type="password" class="form-control py-2" name="senha" placeholder="Digite sua senha"
+              aria-label="Senha" aria-describedby="basic-addon1" required>
           </div>
           <button type="submit" class="btn btn-primary btn-lg mb-4 w-100">Entrar</button>
-            <p class="text-center"><a th:href="@{'/senha'}">Esqueci minha Senha</a></p>
+          <p class="text-center text-decoration-none">
+            <a th:href="@{/senha}">Esqueci minha Senha</a>
+          </p>
         </form>
       </div>
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/10b4b15b8d.js" crossorigin="anonymous"></script>
   <script th:src="@{/scriptLoginPages.js}"></script>
 </body>
+
 </html>

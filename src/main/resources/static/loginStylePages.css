@@ -40,6 +40,9 @@ input.form-control:focus {
     border-color: transparent;
 }
 
+.input-error {
+    border: 2px solid red !important; /* Bordas vermelhas */
+}
 .popup {
     display: none;
     position: fixed;

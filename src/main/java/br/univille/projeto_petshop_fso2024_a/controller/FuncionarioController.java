@@ -2,7 +2,9 @@ package br.univille.projeto_petshop_fso2024_a.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,6 +19,32 @@ public class FuncionarioController {
     
     @Autowired
     private FuncionarioService service;
+
+    @Autowired
+    private FuncionarioService funcionarioService;
+
+    // Página de login
+    @GetMapping("/")
+    public String loginPage() {
+        return "index"; // Nome do arquivo HTML de login
+    }
+
+    // Método para processar o login
+    @PostMapping("/login")
+    public ModelAndView login(@RequestParam String email, @RequestParam String senha, Model model) {
+    Funcionario funcionario = funcionarioService.authenticate(email, senha);
+    if (funcionario != null) {
+        ModelAndView modelAndView = new ModelAndView("home/home");
+        modelAndView.addObject("nomeFuncionario", funcionario.getNome());
+        modelAndView.addObject("cargoFuncionario", funcionario.getCargo());
+        return modelAndView;
+    } else {
+        model.addAttribute("error", "Email ou senha incorretos.");
+        model.addAttribute("email", email);
+        model.addAttribute("senha", senha);
+        return new ModelAndView("redirect:/").addObject("error", "Credenciais inválidas. Por favor, tente novamente.");
+    }
+}
 
     @GetMapping
     public ModelAndView index() {
