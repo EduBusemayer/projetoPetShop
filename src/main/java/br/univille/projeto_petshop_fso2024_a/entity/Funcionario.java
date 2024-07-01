@@ -28,6 +28,8 @@ public class Funcionario {
     @Column(length = 1000)
     private String email;
     @Column(length = 1000)
+    private String senha;
+    @Column(length = 1000)
     private String cpf;
     @Column(length = 1000)
     private String senha;
@@ -35,6 +37,12 @@ public class Funcionario {
 
     public Date getDataNascimento() {
         return dataNascimento;
+    }
+    public String getSenha() {
+        return senha;
+    }
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
     public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;

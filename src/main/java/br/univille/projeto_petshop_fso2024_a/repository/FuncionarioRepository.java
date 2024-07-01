@@ -7,5 +7,5 @@ import br.univille.projeto_petshop_fso2024_a.entity.Funcionario;
 
 @Repository
 public interface FuncionarioRepository extends JpaRepository<Funcionario,Long> {
-    
+    Funcionario findByEmail(String email);
 }

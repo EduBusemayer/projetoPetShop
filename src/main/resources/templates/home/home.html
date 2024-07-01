@@ -13,14 +13,15 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-3 col-md-3 col-lg-2 vh-100 w-25 side d-flex flex-column">
-                <div class="d-flex pt-4 pb-2 align-items-center teste">
-                    <img th:src="@{/img/login-perfil-felipe.png}" alt="farmacia" id="img-login">
+    <div class="container-fluid vh-100 d-flex flex-column">
+        <!-- Minha side bar -->
+        <div class="row flex-grow-1">
+            <div class="col-sm-3 col-md-3 col-lg-2 side d-flex flex-column p-0">
+                <div class="d-flex pt-4 pb-4 mx-4 teste">
+                    <img th:src="@{/img/perfil.png}" alt="farmacia" id="img-login">
                     <div class="d-flex flex-column ms-3">
-                        <span class="text-white fs-5">Felipe</span>
-                        <span class="text-white">Admin</span>
+                        <span th:text="${nomeFuncionario}" class="text-white fs-5" >Nome do Funcionário</span>
+                        <span th:text="${cargoFuncionario}" class="text-white">Cargo do Funcionário</span>
                         <div class="d-flex align-items-center">
                             <div class="status-perfil"></div>
                             <span class="text-white ps-2">Online</span>
@@ -57,7 +58,10 @@
                     </button>
                 </div>
             </div>
-            <div class="col p-5">
+            <!-- Final side bar -->
+
+            <!-- Começo do calendario -->
+            <div class="col p-5 flex-grow-1">
                 <div class="row justify-content-center">
                     <div>
                         <p class="fs-3 py-2">Seus compromissos de Hoje</p>
@@ -74,7 +78,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col d-flex justify-content-center">
                         <table class="calendar-table">
                             <!-- Cabeçalho da Semana -->
                             <thead>
@@ -90,31 +94,43 @@
                             </thead>
                             <tbody id="calendarBody"></tbody>
                         </table>
-                        <div class="row d-flex justify-content-center pt-3">
-                            <div class="col-5 w-100 ms-4">
-                                <p class="fs-5 text-center">Eventos do Dia</p>
-                                <div class="d-flex justify-content-center" id="novosEventos">
-                                </div>
+                    </div>
+                    <div class="row d-flex justify-content-center pt-3">
+                        <div class="col-5 w-100 ms-4">
+                            <p class="fs-5 text-center">Eventos do Dia</p>
+                            <div class="d-flex justify-content-center" id="novosEventos">
                             </div>
                         </div>
-                        <div id="popupAgendamento" class="popup-agendamento">
-                            <div class="popup-content">
-                                <span class="close-popup">&times;</span>
-                                <h2>Formulário de Agendamento</h2>
-                                <form id="formularioAgendamento">
-                                    <label for="cliente">Cliente:</label>
-                                    <input type="text" id="cliente" name="cliente" required><br><br>
-                                    <label for="animal">Animal:</label>
-                                    <input type="text" id="animal" name="animal" required><br><br>
-                                    <label for="data">Data:</label>
-                                    <input type="date" id="data" name="data" required><br><br>
-                                    <label for="hora">Hora:</label>
-                                    <input type="time" id="hora" name="hora" required><br><br>
-                                    <label for="servico">Serviço:</label>
-                                    <input type="text" id="servico" name="servico" required><br><br>
-                                    <button type="submit">Agendar</button>
-                                </form>
-                            </div>
+                    </div>
+                    <div id="popupAgendamento" class="popup-agendamento">
+                        <div class="popup-content">
+                            <span class="close-popup">&times;</span>
+                            <h2>Formulário de Agendamento</h2>
+                            <form id="formularioAgendamento">
+                                <label for="cliente">Cliente:</label>
+                                <input type="text" id="cliente" name="cliente" required><br><br>
+                                <label for="animal">Tipo do pet:</label>
+                                <select id="animal" name="animal" required>
+                                    <option value="">Selecione o tipo do pet</option>
+                                    <option value="Cachorro">Cachorro</option>
+                                    <option value="Gato">Gato</option>
+                                </select><br><br>
+                                <label for="nomeAnimal">Nome do animal:</label>
+                                <input type="text" id="nomeAnimal" name="nomeAnimal" required><br><br>
+                                <label for="data">Data:</label>
+                                <input type="date" id="data" name="data" required><br><br>
+                                <label for="hora">Hora:</label>
+                                <input type="time" id="hora" name="hora" required><br><br>
+                                <label for="servico">Serviço:</label>
+                                <select id="servico" name="servico" required>
+                                    <option value="">Selecione o serviço</option>
+                                    <option value="Banho e Tosa">Banho e Tosa</option>
+                                    <option value="Tosa">Tosa</option>
+                                    <option value="Tosa Higiênica">Tosa Higiênica</option>
+                                    <option value="Banho">Banho</option>
+                                </select><br><br>
+                                <button type="submit" class="btn btn-primary btn-sm py-2">Agendar</button>
+                            </form>
                         </div>
                     </div>
                 </div>
