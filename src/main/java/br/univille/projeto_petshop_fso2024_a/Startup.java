@@ -127,7 +127,7 @@ public class Startup {
         funcionario1.setDataNascimento(new Date(2003,8,7));
         funcionario1.setCargo("Boss");
         funcionario1.setEmail("edubusemayer@gmail.com");
-        funcionario1.setSenha("T3st3");
+        funcionario1.setSenha("Teste");
         funcionarioService.save(funcionario1);
 
         var animalService1 = new Animal();
