@@ -20,10 +20,8 @@
                 <div class="d-flex pt-4 pb-4 mx-4 teste">
                     <img th:src="@{/img/perfil.png}" alt="farmacia" id="img-login">
                     <div class="d-flex flex-column ms-3">
-                        <!-- <span th:text="${nomeFuncionario}" class="text-white fs-5" >Nome do Funcionário</span>
-                        <span th:text="${cargoFuncionario}" class="text-white">Cargo do Funcionário</span> -->
-                        <span class="text-white fs-5">Eduardo</span>
-                        <span class="text-white">Admin</span>
+                        <span th:text="${nomeFuncionario}" class="text-white fs-5" >Nome do Funcionário</span>
+                        <span th:text="${cargoFuncionario}" class="text-white">Cargo do Funcionário</span>
                         <div class="d-flex align-items-center">
                             <div class="status-perfil"></div>
                             <span class="text-white ps-2">Online</span>
@@ -125,6 +123,8 @@
                                     <option value="Tosa">Tosa</option>
                                     <option value="Tosa Higiênica">Tosa Higiênica</option>
                                     <option value="Banho">Banho</option>
+                                    <option value="Vacina">Vacinas</option>
+                                    <option value="Atendimento Médico">Atendimento Médico</option>
                                 </select><br><br>
                                 <button type="submit" class="btn btn-primary btn-sm py-2">Agendar</button>
                             </form>

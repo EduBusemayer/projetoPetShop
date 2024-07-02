@@ -190,8 +190,8 @@ public class Startup {
         funcionario2.setEndereco("Rua dos Animais, 123");
         funcionario2.setDataNascimento(new Date(1990, 8, 15));
         funcionario2.setCargo("Veterinária");
-        funcionario2.setEmail("carla.mendes@email.com");
-        funcionario2.setSenha("Senha123");
+        funcionario2.setEmail("carla.mendes@gmail.com");
+        funcionario2.setSenha("Teste");
         funcionarioService.save(funcionario2);
 
         var funcionario3 = new Funcionario();
@@ -200,8 +200,8 @@ public class Startup {
         funcionario3.setEndereco("Av. dos Pets, 456");
         funcionario3.setDataNascimento(new Date(1985, 5, 25));
         funcionario3.setCargo("Esteticista");
-        funcionario3.setEmail("fernando.oliveira@email.com");
-        funcionario3.setSenha("Senha456");
+        funcionario3.setEmail("fernando.oliveira@gmail.com");
+        funcionario3.setSenha("Teste");
         funcionarioService.save(funcionario3);
 
         var funcionario4 = new Funcionario();
@@ -210,8 +210,8 @@ public class Startup {
         funcionario4.setEndereco("Alameda dos Cães, 789");
         funcionario4.setDataNascimento(new Date(1988, 3, 12));
         funcionario4.setCargo("Atendente");
-        funcionario4.setEmail("marina.souza@email.com");
-        funcionario4.setSenha("Senha789");
+        funcionario4.setEmail("marina.souza@gmail.com");
+        funcionario4.setSenha("Teste");
         funcionarioService.save(funcionario4);
 
         var funcionario5 = new Funcionario();
@@ -220,8 +220,8 @@ public class Startup {
         funcionario5.setEndereco("Rua dos Gatos, 321");
         funcionario5.setDataNascimento(new Date(1995, 7, 8));
         funcionario5.setCargo("Banho e Tosa");
-        funcionario5.setEmail("lucas.santos@email.com");
-        funcionario5.setSenha("SenhaABC");
+        funcionario5.setEmail("lucas.santos@gmail.com");
+        funcionario5.setSenha("Teste");
         funcionarioService.save(funcionario5);
 
         var funcionario6 = new Funcionario();
@@ -230,8 +230,8 @@ public class Startup {
         funcionario6.setEndereco("Travessa dos Pássaros, 654");
         funcionario6.setDataNascimento(new Date(1980, 1, 20));
         funcionario6.setCargo("Gerente");
-        funcionario6.setEmail("patricia.costa@email.com");
-        funcionario6.setSenha("MinhaSenha123");
+        funcionario6.setEmail("patricia.costa@gmail.com");
+        funcionario6.setSenha("Teste");
         funcionarioService.save(funcionario6);
 
         var funcionario7 = new Funcionario();
@@ -240,8 +240,8 @@ public class Startup {
         funcionario7.setEndereco("Praça dos Peixes, 987");
         funcionario7.setDataNascimento(new Date(1992, 11, 30));
         funcionario7.setCargo("Recepcionista");
-        funcionario7.setEmail("rafaela.silva@email.com");
-        funcionario7.setSenha("SenhaXYZ");
+        funcionario7.setEmail("rafaela.silva@gmail.com");
+        funcionario7.setSenha("Teste");
         funcionarioService.save(funcionario7);
 
         var funcionario8 = new Funcionario();
@@ -250,8 +250,8 @@ public class Startup {
         funcionario8.setEndereco("Avenida dos Hamsters, 741");
         funcionario8.setDataNascimento(new Date(1987, 6, 5));
         funcionario8.setCargo("Farmacêutico Veterinário");
-        funcionario8.setEmail("gustavo.almeida@email.com");
-        funcionario8.setSenha("Senha7890");
+        funcionario8.setEmail("gustavo.almeida@gmail.com");
+        funcionario8.setSenha("Teste");
         funcionarioService.save(funcionario8);
 
         var funcionario9 = new Funcionario();
@@ -260,8 +260,8 @@ public class Startup {
         funcionario9.setEndereco("Estrada dos Coelhos, 852");
         funcionario9.setDataNascimento(new Date(1998, 9, 18));
         funcionario9.setCargo("Assistente de Veterinário");
-        funcionario9.setEmail("amanda.oliveira@email.com");
-        funcionario9.setSenha("MinhaSenha456");
+        funcionario9.setEmail("amanda.oliveira@gmail.com");
+        funcionario9.setSenha("Teste");
         funcionarioService.save(funcionario9);
 
         var funcionario10 = new Funcionario();
@@ -270,8 +270,8 @@ public class Startup {
         funcionario10.setEndereco("Rua dos Peixes, 963");
         funcionario10.setDataNascimento(new Date(1993, 4, 7));
         funcionario10.setCargo("Auxiliar de Petshop");
-        funcionario10.setEmail("felipe.santos@email.com");
-        funcionario10.setSenha("Senha1234");
+        funcionario10.setEmail("felipe.santos@gmail.com");
+        funcionario10.setSenha("Teste");
         funcionarioService.save(funcionario10);
 
         var animalService1 = new Animal();
