@@ -1,0 +1,23 @@
+.table-container {
+    max-width: 1350px;
+    margin: 100px auto;
+}
+
+.table-bordered-custom thead th {
+    background-color: #0D6EFD;
+    color: white;
+}
+
+.table-bordered-custom thead th:first-child {
+    border-radius: 6px 0 0 0;
+}
+
+.table-bordered-custom thead th:last-child {
+    border-radius: 0 6px 0 0;
+}
+
+.table-bordered-custom tbody tr {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}

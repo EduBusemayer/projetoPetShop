@@ -20,8 +20,10 @@
                 <div class="d-flex pt-4 pb-4 mx-4 teste">
                     <img th:src="@{/img/perfil.png}" alt="farmacia" id="img-login">
                     <div class="d-flex flex-column ms-3">
-                        <span th:text="${nomeFuncionario}" class="text-white fs-5" >Nome do Funcionário</span>
-                        <span th:text="${cargoFuncionario}" class="text-white">Cargo do Funcionário</span>
+                        <!-- <span th:text="${nomeFuncionario}" class="text-white fs-5" >Nome do Funcionário</span>
+                        <span th:text="${cargoFuncionario}" class="text-white">Cargo do Funcionário</span> -->
+                        <span class="text-white fs-5">Eduardo</span>
+                        <span class="text-white">Admin</span>
                         <div class="d-flex align-items-center">
                             <div class="status-perfil"></div>
                             <span class="text-white ps-2">Online</span>
@@ -64,7 +66,7 @@
             <div class="col p-5 flex-grow-1">
                 <div class="row justify-content-center">
                     <div class="col-auto">
-                        <div class="d-flex justify-content-center my-3">
+                        <div class="d-flex justify-content-center mt-5 mb-2">
                             <button id="prevMonthBtn" class="btn btn-primary me-3">&lt;</button>
                             <h3 id="currentMonthYear" class="fs-4 pt-1">Junho 2024</h3>
                             <button id="nextMonthBtn" class="btn btn-primary ms-3">&gt;</button>

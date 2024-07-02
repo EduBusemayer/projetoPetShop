@@ -312,8 +312,8 @@ public class Startup {
 
         var animalService5 = new Animal();
         animalService5.setNome("Mel");
-        animalService5.setTipo("Cachorro");
-        animalService5.setRaça("Golden Retriever");
+        animalService5.setTipo("Gato");
+        animalService5.setRaça("Siamês");
         animalService5.setCor("Dourado");
         animalService5.setDataNascimento(new Date(2016, 12, 3));
         animalService5.setDono("Fernanda Costa");
@@ -321,9 +321,9 @@ public class Startup {
 
         var animalService6 = new Animal();
         animalService6.setNome("Thor");
-        animalService6.setTipo("Cachorro");
-        animalService6.setRaça("Rottweiler");
-        animalService6.setCor("Preto e Marrom");
+        animalService6.setTipo("Gato");
+        animalService6.setRaça("Persa");
+        animalService6.setCor("Preto e Branco");
         animalService6.setDataNascimento(new Date(2019, 2, 18));
         animalService6.setDono("Mariana Ferreira");
         animalService.save(animalService6);
@@ -339,8 +339,8 @@ public class Startup {
 
         var animalService8 = new Animal();
         animalService8.setNome("Princesa");
-        animalService8.setTipo("Cachorro");
-        animalService8.setRaça("Poodle");
+        animalService8.setTipo("Gato");
+        animalService8.setRaça("Maine Coon");
         animalService8.setCor("Branco");
         animalService8.setDataNascimento(new Date(2013, 4, 21));
         animalService8.setDono("Camila Almeida");
@@ -348,8 +348,8 @@ public class Startup {
 
         var animalService9 = new Animal();
         animalService9.setNome("Toby");
-        animalService9.setTipo("Cachorro");
-        animalService9.setRaça("Beagle");
+        animalService9.setTipo("Gato");
+        animalService9.setRaça("Bengal");
         animalService9.setCor("Tricolor");
         animalService9.setDataNascimento(new Date(2012, 10, 15));
         animalService9.setDono("Rodrigo Nunes");

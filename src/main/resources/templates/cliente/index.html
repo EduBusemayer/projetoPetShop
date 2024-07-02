@@ -10,31 +10,7 @@
   <link rel="stylesheet" th:href="@{/webjars/jquery-ui/1.13.2/jquery-ui.css}" />
   <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
   <link rel="stylesheet" th:href="@{/homeStyle.css}">
-  <style>
-    .table-container {
-      max-width: 1200px;
-      margin: 100px auto;
-    }
-
-    .table-bordered-custom thead th {
-    background-color: #0D6EFD;
-    color: white;
-  }
-
-  .table-bordered-custom thead th:first-child {
-    border-radius: 6px 0 0 0;
-  }
-
-  .table-bordered-custom thead th:last-child {
-    border-radius: 0 6px 0 0;
-  }
-
-  .table-bordered-custom tbody tr {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-  }
-  </style>
+  <link rel="stylesheet" th:href="@{/tabelaStyle.css}">
 </head>
 
 <body>
@@ -45,8 +21,8 @@
         <div class="d-flex pt-4 pb-4 mx-4 teste">
           <img th:src="@{/img/perfil.png}" alt="farmacia" id="img-login">
           <div class="d-flex flex-column ms-3">
-            <span th:text="${nomeFuncionario}" class="text-white fs-5">Nome do Funcionário</span>
-            <span th:text="${cargoFuncionario}" class="text-white">Cargo do Funcionário</span>
+            <span class="text-white fs-5">Eduardo</span>
+            <span class="text-white">Admin</span>
             <div class="d-flex align-items-center">
               <div class="status-perfil"></div>
               <span class="text-white ps-2">Online</span>
