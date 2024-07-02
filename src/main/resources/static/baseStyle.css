@@ -7,16 +7,13 @@ h1 {
     color: white;
 }
 
-/* #novo {
-    margin-left: 1408px;
-} */
-
 #enviar {
     margin-top: 10px;
     margin-left: 300px;
 }
 
-.table, #texto {
+.table,
+#texto {
     color: white;
 }
 
