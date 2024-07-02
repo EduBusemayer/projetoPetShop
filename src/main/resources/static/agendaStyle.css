@@ -1,7 +1,7 @@
 .calendar-table {
     border-collapse: collapse;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 .calendar-table th, .calendar-table td {
     border: 1px solid #ccc;
